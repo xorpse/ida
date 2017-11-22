@@ -1,0 +1,13 @@
+OASISFormat: 0.4
+Name:        ida
+Version:     0.1.0
+Synopsis:    IDA Pro integration for OCaml.
+Authors:     Sam Thomas <m@kali.ai>
+License:     MIT
+Plugins:     META (0.4), DevFiles (0.4)
+
+Library ida
+  Path:         lib/
+  BuildTools:   ocamlbuild
+  BuildDepends: str, unix
+  Modules:      IDA

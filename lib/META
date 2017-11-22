@@ -1,0 +1,12 @@
+# OASIS_START
+# DO NOT EDIT (digest: b6ca4daca1b02158b06d72d94be7ebff)
+version = "0.1.0"
+description = "IDA Pro integration for OCaml."
+requires = "str unix"
+archive(byte) = "ida.cma"
+archive(byte, plugin) = "ida.cma"
+archive(native) = "ida.cmxa"
+archive(native, plugin) = "ida.cmxs"
+exists_if = "ida.cma"
+# OASIS_STOP
+
