@@ -1,0 +1,18 @@
+opam-version: "1.2"
+name: "ida"
+version: "0.1.0"
+maintainer: "Sam Thomas <m@kali.ai>"
+authors: "Sam Thomas <m@kali.ai>"
+homepage: "https://github.com/atazoth/ida"
+dev-repo: "https://github.com/atazoth/ida.git"
+bug-reports: "https://github.com/atazoth/ida/issues"
+license: "MIT"
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "str"
+  "jbuilder" { build }
+  "unix"
+]
+available: ocaml-version >= "4.03.0"
